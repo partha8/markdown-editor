@@ -1,12 +1,19 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import "../style.css"
+import editorContext from "../context/appContext"
 
-function inputArea() {
+const InputArea= () =>  {
+    
+    const {setMarkdownText} = useContext(editorContext)
+
+    const changeHandler= (e) =>{
+        let value=e.target.value;
+        setMarkdownText(value);
+    }
     return (
-        <div className="input-main">
-            <h1>Hello from input</h1>
-        </div>
+        <textarea onChange={changeHandler} className="input-main">
+        </textarea>
     )
 }
 
-export default inputArea
+export default InputArea
