@@ -11,7 +11,7 @@ function App() {
   return (
     <EditorContext.Provider value={{markdownText,setMarkdownText}}>
       <header>
-        <h1>Markdown Editor</h1>
+        <h1>Simple Markdown</h1>
       </header>
       <div className='text-area'>
         <h2>Markdown Text</h2>
