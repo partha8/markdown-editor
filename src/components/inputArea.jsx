@@ -4,7 +4,7 @@ import editorContext from "../context/appContext"
 
 const InputArea= () =>  {
     
-    const {setMarkdownText} = useContext(editorContext)
+    const {markdownText,setMarkdownText} = useContext(editorContext)
 
     const changeHandler= (e) =>{
         let value=e.target.value;
@@ -12,6 +12,7 @@ const InputArea= () =>  {
     }
     return (
         <textarea onChange={changeHandler} className="input-main">
+            {markdownText}
         </textarea>
     )
 }
