@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React from "react";
 import "./style.css";
 import InputArea from "./components/inputArea";
 import ResultArea from "./components/resultArea";
