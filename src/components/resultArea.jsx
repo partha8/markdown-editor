@@ -1,7 +1,7 @@
-import React, { useContext } from 'react'
-import "../style.css"
-import editorContext from '../context/appContext'
-import ReactMarkdown from "react-markdown"
+import React, { useContext } from 'react';
+import "../style.css";
+import editorContext from '../context/appContext';
+import ReactMarkdown from "react-markdown";
 
 function ResultArea() {
     const {markdownText}=useContext(editorContext);

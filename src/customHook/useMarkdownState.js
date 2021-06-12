@@ -8,10 +8,10 @@ function useMarkdownState(defaultText,key) {
     });
 
     useEffect(() => {
-        window.localStorage.setItem(key,JSON.stringify(markdownText))
+        window.localStorage.setItem(key,JSON.stringify(markdownText)) //takes the object and converts it into a string
     }, [key,markdownText]);
 
     return [markdownText,setMarkdownText];
 }
-
+ 
 export default useMarkdownState
