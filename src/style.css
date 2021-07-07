@@ -72,3 +72,11 @@ p {
     font-size: 1rem;
   }
 }
+pre {
+  background: #222;
+  display: inline-block;
+  border-radius: var(--radius);
+  padding: 1rem 2rem;
+  color: yellow;
+  margin-bottom: 1.5rem;
+}
